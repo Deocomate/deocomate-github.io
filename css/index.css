@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0 auto;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* IMG */
+body>div.container-fluid{
+    height: 100vh;
+    min-height: 500px;
+}
+.bg_info{
+    background-image: url(../img/Me.jpg);
+    height: 70vh;
+    min-height:350px;
+    background-size: cover;
+    background-position: center center;;
+}
+.bg_info h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.bg_info h3{
+    font-family: 'Mulish', sans-serif;
+    font-size:18px;
+}
+.left_info{
+    height: 30vh;
+    min-height:150px;
+}
+.item{
+    height:15vh;
+    min-height:75px;
+    display: flex;
+}
+.item img{
+    width: 100%;
+    display: block;
+}
+.item a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-height: 50px;
+}
+.item{
+    transition: all 0.5s;
+}
+.item:first-child{
+    background-color: #00c4cc;
+}
+.item:nth-child(2){
+    background-color: #ff738e;
+}
+.item:nth-child(3){
+    background-color: #a548ff;
+}
+.item:nth-child(4){
+    background-color: #ffa53b;
+}
+.item:nth-child(5){
+    background-color: #6422b8;
+}
+.item:nth-child(6){
+    background-color: #ffd93b;
+}
+
+.item:nth-child(1):hover{
+    background-color: #ffd93b;
+}
+.item:nth-child(2):hover{
+    background-color: #6422b8;
+}
+.item:nth-child(3):hover{
+    background-color: #ffa53b;
+}
+.item:nth-child(4):hover{
+    background-color: #a548ff;
+}
+.item:nth-child(5):hover{
+    background-color: #ff738e;
+}
+.item:nth-child(6):hover{
+    background-color: #00c4cc;
+}
+
+.thongtin{
+    background-color: rgba(245, 245, 245, 0.719);
+    width: 100%;
+}
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {
+    .bg_info{
+        height: 100vh;
+        min-height:500px;
+    }
+    .item{
+        min-height: 83.33333333333px;
+        height: 16.666666666666666666vh;
+    }
+}
+
+
+@media (min-width: 992px) {  
+    .item{
+        min-height: 166.6666666666666666666666666666666666666px;
+        height: 33.33vh;
+
+    }
+    .item a{
+        width: 17vh;
+        min-width: 100px;
+    }
+}
+
+
+
